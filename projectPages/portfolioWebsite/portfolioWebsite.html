@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--meta data-->
+        <title>Tempalte</title>
+        <meta charset="UTF-8">
+
+        <!--style sheets-->
+        <link rel="stylesheet" href="../../general.css">
+        <link rel="stylesheet" href="../assets/template.css">
+
+        <!--google fonts-->
+        <!--Navbar-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+        <!--h1-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+        <!--p-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+        <!--Making Reactive CSS Work-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    </head>
+    
+    <body onresize="windowSizeUpdate();">
+        <!--navbar-->
+        <ul class="navbar">
+            <li> <a class="inactive" href="../../index.html">HOME</a> </li>
+            <li> <a class = "inactive" href="../../projects.html">PROJECTS</a> </li>
+            <li id="contact"> <a class = "inactive" href="../../contactMe.html">CONTACT ME</a> </li>
+        </ul>
+
+
+        <!--Slideshow and its different buttons-->
+        <div class="slideshowContainer contentBox">
+            <h1>Portfolio Website</h1>
+            <div class="slideshow">
+                <button class="slideshowButton left isHidden">
+                    <img src="../assets/leftArrow.png" alt="Left Arrow Button">
+                </button>
+
+                <div class="slideshowTrackContainer">
+                    <ul class="slideshowTrack animate">
+                        <li class="slideshowSlide currentSlide">
+                            <img class="slideshowImage" src="portfolioWebsiteCode.PNG" alt="Code for the website">
+                        </li>
+                        <li class="slideshowSlide">
+                            <img class="slideshowImage" src="portfolioWebsiteScreenshot.PNG" alt="">
+                        </li>
+                    </ul>
+                </div>
+
+                <button class="slideshowButton right">
+                    <img src="../assets/rightArrow.png" alt="Right Arrow Button">
+                </button>
+
+                <div class="slideshowNav">
+                    <button class="slideshowIndicator currentSlide"></button>
+                    <button class="slideshowIndicator"></button>
+                </div>
+
+            </div>
+        </div>
+
+        <!--Text about the Project-->
+
+        <div class="contentBox bottomTwo" id="aboutProject">
+            <h2>About This Project</h2>
+            
+            <p>
+                I was initially inspired to make this website because I wanted a place to document and showcase the projects 
+                I have worked on, and felt that there wasn't a great platform for this. I took an introductory HTML and CSS 
+                class in high school, so I decided to use the skills I learned to make my own platform to document projects. 
+                My goal was to keep the complexity of the code down while making an easy-to-navigate and professional website.
+            </p>
+
+            <br>
+
+            <p>
+                I started by brainstorming what I wanted the website to look like. I planned for the site to have three main pages:
+                Home, which would be the landing page and give some information about me and the site; Projects, which would showcase
+                the things I have worked on, and Contact Me, which would show how people can get in touch or view me on other sites.
+                I also planned for each project to have its own page where I could put links to the files I used or GitHub 
+                repositories, images of the project, and a description of them. After this, I began structuring the website's files.
+                I decided that each page would link to two CSS style sheets. One would be an over-arching stylesheet containing 
+                general styling for text and classes that could be used across multiple pages. The other would be specifically for 
+                that page to make specific changes that would not affect separate parts of the site. After this, I made a git 
+                repository to save my progress and started coding.
+            </p>
+
+            <br>
+
+            <p>
+                The first thing I programmed was the navbar. I had never made one before, so I had to look up a few examples to see 
+                how to do it. After this, I implemented mine and went through a few iterations and styling before I landed on what 
+                is on the website now. It isn't the fanciest thing ever, but  I like its simple and sleek design, so I kept it. Following
+                this, I began work on the home page. Here, I made two classes of divs, which I would use throughout the project. I also 
+                added an @media rule to make the page look good on smaller devices. Next, I worked on the projects page. The biggest 
+                challenge I faced with this page was getting the personal project divs to space out properly, but after some trial 
+                and error, I got them to work. The next page I worked on was the individual project page. The most challenging thing 
+                I had to program in this project was the image slideshow on this page. I had no clue how to go about this, so after some
+                research, I found one that worked well on my site. It required some javascript, which I was trying to avoid because I 
+                had never used it in making a website, but after looking at what the code was doing, I was confident I could work with 
+                it. This slideshow had one major issue: if you ever expanded the window larger than when you first opened the page, the
+                slideshow would bug and show multiple images at once. The fix I found was running a function that adjusts the position
+                of the slideshow when the window is resized. I would like a more elegant fix to this, but it works and doesn't cause any 
+                other issues, so I left it. Finally, I worked on the Contact Me page. I didn't run into many problems with this page because 
+                it is very similar to how the Home page works, so I had to adjust some of the CSS to make the links work correctly. 
+            </p>
+
+
+        </div>
+
+        <!--links for github/files-->
+        <div class="contentBox bottomTwo" id="linkBox">
+            <h2>Links/Files</h2>
+            
+            <div class="contentSubBox link">
+                <a href="https://github.com/Hudson-Bowen/Portfolio-Website" target="_blank">Github Repository</a>
+            </div>
+
+        </div>
+        
+    </body>
+
+    <script src="../assets/template.js"></script>
+
+    </html>

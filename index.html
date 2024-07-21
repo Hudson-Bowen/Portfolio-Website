@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--meta data-->
+        <title>Welcome</title>
+        <meta charset="UTF-8">
+        
+        <!--Style Sheets-->
+        <link rel="stylesheet" href="general.css">
+        <link rel="stylesheet" href="index.css">
+
+        <!--google fonts-->
+        <!--Navbar-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+        <!--h1-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+        <!--p-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+        <!--To make smaller resolutions work-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    </head>
+    
+    <body>
+        
+        <!--navbar-->
+        <ul class="navbar">
+            <li> <a class="active" href="index.html">HOME</a> </li>
+            <li> <a class = "inactive" href="projects.html">PROJECTS</a> </li>
+            <li id="contact"> <a class = "inactive" href="contactMe.html">CONTACT ME</a> </li>
+        </ul>
+
+
+        
+        
+        <!--about me section-->
+        <div id="aboutMe" class="contentBox">
+            <img src="portrait.png" alt="Picture of Hudson Bowen"> 
+            <h1>About Me</h1>
+            <p>Hello, My name is Hudson Bowen, and I'm a second-year Electrical and Electronics Engineering major at the University of Georgia. I'm a member of UGA Motorsports, working on the grounded low-voltage system on the Formula Electric team. After college, I plan on working in automation or motorsports.</p>
+        </div>
+
+        <!--about this site section-->
+        <div id="aboutThisSite" class="contentBox">
+            <img src="projectPages/portfolioWebsite/portfolioWebsiteCode.PNG" alt="Gif of this website's code">
+            <h1>About This Site</h1>
+            <p>I decided to create this site because I wanted a place to document and share all of my projects. I took a web design class in high school that taught me the basics of HTML and CSS, so making a website would be a good way to refresh my knowledge on the languages and be a good place to document the projects. If you want more information on the site's creation, click <a href="projectPages/portfolioWebsite/portfolioWebsite.html" target="_blank">here</a>. The home page gives some information about me and projects I am working on or will be working on in the future. If you want to see my completed projects, visit the projects page. If you want to get in touch with me, see the contact me page. </p>
+
+        </div>
+
+        <!--current projects section-->
+
+        <!--
+            Current Project template
+
+            <div class="contentSubBox">
+                <img src="currentProject.PNG" alt="Image of current project">
+                <h2>Name of Project</h2>
+                <h3>Type of Project</h3>
+                <p>Text about the Project</p>
+            </div>
+        -->
+        <div id="currentProjects" class="contentBox">
+            
+            <h1>Current Projects</h1>
+            
+            <div class="contentSubBox">
+                <img src="FormulaSAELogo.png" alt="Image of current project">
+                <h2>Formula Electric Grounded Low Voltage Circuitry</h2>
+                <h3>Academic Project</h3>
+                <p>As a member of the UGA Motorsport Formula Electric team, I am part of a group tasked with creating the grounded low-voltage system. This system contains basic driver controls and a safety circuit that shuts the car down if sensors detect a fault. We are in the early stages of development and will continue working to have it ready for our first competition. </p>
+            </div>
+
+            <div class="contentSubBox">
+                <img src="electronicsStorageShelfCurrent.PNG" alt="Image of current project">
+                <h2>Electronics Storage Shelf</h2>
+                <h3>Small Personal Project</h3>
+                <p>Over the next few years, I will be collecting many different electrical components, which will all vary in use, size, and quantity. Because of this, I want to make a customizable and tileable shelf that I can make on my 3D printer to expand the shelf whenever I need to.</p>
+            </div>
+
+        </div>
+
+        <!--Future Projects Section-->
+
+        <!--
+            future projects template
+
+            <div class="contentSubBox">
+
+                <h3 style="text-decoration: underline;">Future Project Title</h3>
+                <p>Future Project Text</p>
+
+            </div>
+        -->
+
+        <div id="futureProjects" class="contentBox">
+
+            <h1>Future Projects</h1>
+
+            <div class="contentSubBox">
+
+                <h3 style="text-decoration: underline;">Remote Camera Birdhouse</h3>
+                <p>For this project, I want to make a birdhouse with a camera that records when birds enter or exit. The camera would look at the entrance and record the birds' movement, then send these clips to a computer for viewing.</p>
+
+            </div>
+
+        </div>
+
+    </body>
+</html>

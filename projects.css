@@ -1,0 +1,148 @@
+/* This CSS doc is for specific needs of the Personal Projects page */
+
+
+/*CSS for larger Content Boxes*/
+.contentBox{
+    /*making content box work for the smaller divs inside*/
+    text-align:center;
+    display:block;
+    left:10px;
+    right:10px;
+}
+
+.contentBox h1{
+    text-align: center;
+}
+
+
+/*CSS for boxes holding each individucal personal projects*/
+
+
+/*when someone hovers over one of the projects*/
+.personalProjectsContentBoxLink:hover{
+    .personalProjectsContentBox{
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    .personalProjectsContentBox h2{
+        color:rgb(143, 26, 26);
+        text-decoration: underline;
+    }
+}
+
+.personalProjectsContentBoxLink{
+    text-decoration: none;
+    /*setting animation type, set delay in each indivudual project*/
+    animation-name: fadeIn;
+    animation-duration:2s;
+    animation-fill-mode: backwards;
+}
+
+.personalProjectsContentBox{
+    background-color: darkgrey;
+    /*positining for the sub boxes*/
+    width: 20%;
+    height: 425px;
+    display: inline-block;
+    margin: 2%;
+    vertical-align: top;
+}
+
+.personalProjectsContentBox img{
+    /*positioning for personal projecect images*/
+    width:100%;
+    margin:0;
+    height: 325px;
+    object-fit: cover;
+}
+
+.personalProjectsContentBox h2{
+    /*positioning*/
+    text-align: center;
+    /*font*/
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-size:23px;
+    text-decoration: none;
+    color:black;
+}
+
+/*style for academic projects section*/
+
+.academicProjectsContentBoxLink{
+    text-decoration: none;
+    /*animation name and content*/
+    animation-name: fadeIn;
+    animation-duration:2s;
+    animation-fill-mode: backwards;
+}
+
+.academicProjectsContentBoxLink:hover{
+    .contentSubBox{
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .contentSubBox h2{
+        color:rgb(143, 26, 26);
+        text-decoration: underline;
+    }
+}
+
+.contentSubBox  img{
+    float: left;
+}
+
+.contentSubBox h2{
+    color: black;
+}
+
+.contentSubBox p{
+    color: black;
+}
+
+
+
+
+/*making the page responsive for smaller screens*/
+
+@media screen and (max-width: 1500px){
+    .personalProjectsContentBox{
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    .personalProjectsContentBox{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .personalProjectsContentBox{
+        width: 80%;
+    }
+}
+
+/*Animations for Each Section*/
+
+#large{
+    animation-name: fadeIn;
+    animation-duration:2s;
+    animation-delay:0.5s;
+    animation-fill-mode: backwards;
+}
+
+#small{
+    animation-name: fadeIn;
+    animation-duration:2s;
+    animation-delay:1s;
+    animation-fill-mode: backwards;
+}
+
+#academic{
+    animation-name: fadeIn;
+    animation-duration:2s;
+    animation-delay:0s;
+    animation-fill-mode: backwards;
+}

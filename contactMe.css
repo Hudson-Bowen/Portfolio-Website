@@ -1,0 +1,36 @@
+/*CSS specifically for Contact Me page */
+
+
+/*style for main container*/
+.contentBox{
+    animation-name: fadeIn;
+    animation-duration:2s;
+    animation-fill-mode: backwards;
+}
+
+.contentBox h1{
+    text-align: center;
+}
+
+/*style for sub containers with the links*/
+.contentSubBox img{
+    height: 75px;
+    width: auto;
+}
+
+/*making site work for smaller screens*/
+
+@media screen and (max-width:550px) {
+
+    .contentSubBox img{
+        width: 50%;
+        height: auto;
+        float: none;
+        margin: 10px;
+    }
+
+    .contentSubBox{
+        text-align: center;
+    }
+}
+

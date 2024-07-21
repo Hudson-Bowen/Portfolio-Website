@@ -1,0 +1,186 @@
+/*CSS for the Template  Personal Project Page*/
+
+/*Styles for Slideshow*/
+
+.slideshowContainer{
+  background: darkgray;
+  border-radius:50px;
+
+  animation-name: fadeIn;
+  animation-duration:2s;
+  animation-delay:0s;
+  animation-fill-mode: backwards;
+}
+
+.slideshowContainer h1{
+  text-align: center;
+  color: rgb(143, 26, 26);
+}
+
+.slideshow{
+  position: relative;
+  height:600px;
+  width:85%;
+  margin: 5px auto 35px;
+}
+
+.slideshowImage{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slideshowTrackContainer{
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.slideshowTrack{
+  padding:0;
+  margin:0;
+  list-style: none;
+  position: relative;
+  height: 100%;
+}
+
+
+/*because the slide show is very janky, this class is the slideshow's animations and has to be removed during re-sizing of the window*/
+.animate{
+  transition: transform 500ms ease-out;
+}
+
+.slideshowSlide{
+  position: absolute;
+  top:0;
+  bottom:0;
+  width: 100%;
+}
+
+.slideshowSlide iframe{
+  height: 100%;
+  width: 100%;
+}
+
+/*slideshow buttons*/
+
+.slideshowButton{
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%);  
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  margin:10px
+}
+
+.left{
+  left: -30px;
+}
+
+.right{
+  right:-70px
+}
+
+.slideshowButton img{
+  width: 30px;
+}
+
+.slideshowNav{
+  display: flex;
+  justify-content: center;
+  padding:10px 0;
+}
+
+.slideshowIndicator{
+  border:0;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  background: rgba(0, 0, 0, 0.3);
+  margin: 0 12px;
+  cursor: pointer;
+}
+
+.slideshowIndicator.currentSlide{
+  background: rgb(143, 26, 26);
+}
+
+/*class to hide arrows when there is no more slides in that direction*/
+.isHidden{
+  display: none;
+}
+
+/*Style for bottom two boxes*/
+
+.contentBox h2{
+  /*positioning*/
+  margin:5px 15px;
+  text-align: center;
+  /*font*/
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-size:23px;
+  text-decoration: underline;
+  color:rgb(143, 26, 26);
+}
+
+.bottomTwo{
+  display: block;
+  margin:1%;
+}
+
+#aboutProject{
+  float: left;
+  width:71%;
+  animation-name: fadeIn;
+  animation-duration:2s;
+  animation-delay:0.5s;
+  animation-fill-mode: backwards;
+}
+
+#linkBox{
+  float: right;
+  width: 25%;
+  text-align: center;
+  animation-name: fadeIn;
+  animation-duration:2s;
+  animation-delay:0.5s;
+  animation-fill-mode: backwards;
+}
+
+.link a{
+  padding: 15px;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight:225;
+  font-size:22px;
+  overflow: hidden;
+  font-weight: bold;
+  color: black;
+}
+
+.link a:hover{
+  color:rgb(143, 26, 26);
+}
+
+/*Making site work with mobile*/
+
+@media screen and (max-width:600px) {
+  
+  #aboutProject{
+    width: 95%;
+    margin: 15px 20px;
+    float: none;
+  }
+
+  #linkBox{
+    width: 95%;
+    margin: 15px 20px;
+    float: none;
+  }
+
+  .slideshow{
+    height: 400px;
+  }
+
+}

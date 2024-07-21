@@ -1,0 +1,133 @@
+/* This CSS doc is for specific needs of the index page */
+
+/*css for the about me section*/
+
+#aboutMe {
+    animation-name: fadeIn;
+    animation-duration:2s;
+}
+
+#aboutMe img{
+    float:right;
+    margin:10px;
+    width: 25%;
+}
+
+#aboutMe h1{
+    text-align: left;
+}
+
+#aboutMe p{
+    text-align: left;
+}
+
+/*css for the about this cite section*/
+
+#aboutThisSite{
+    animation-name: fadeIn;
+    animation-duration:2s;
+    animation-delay:0.5s;
+    animation-fill-mode: backwards;
+}
+
+#aboutThisSite img{
+    float:left;
+    margin:10px;
+    width: 30%;
+}
+
+#aboutThisSite h1{
+    text-align: left;
+}
+
+#aboutThisSite p{
+    text-align: left;
+}
+
+#aboutThisSite a{
+    color: black;
+}
+
+#aboutThisSite a:hover{
+    color:rgb(143, 26, 26);
+}
+
+/*css for the current projects section*/
+
+#currentProjects{
+    animation-name: fadeIn;
+    animation-duration:2s;
+    animation-delay:1s;
+    animation-fill-mode: backwards;
+}
+
+#currentProjects h1{
+    text-align: center;
+}
+
+/*css for futurre projects section */
+
+#futureProjects{
+    animation-name: fadeIn;
+    animation-duration:2s;
+    animation-delay:1.5s;
+    animation-fill-mode: backwards;
+}
+
+#futureProjects h1{
+    text-align: center;
+}
+
+/*making page compatable with smaller sizes*/
+
+@media screen and (max-width:1000px) {
+
+    /*update this when you get the real images in*/
+
+    #aboutMe img{
+        width:240px;
+    }
+
+    #aboutThisSite img{
+        width:240px;
+    }
+    
+}
+
+
+
+/*making page compatable with mobile*/
+
+@media screen and (max-width: 750px) {
+    
+/*css for the about me section*/
+
+#aboutMe img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:100%;
+    margin:0px;
+}
+
+
+
+#aboutThisSite img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:100%;
+    margin:0px;
+}
+
+.contentSubBox img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:100%;
+    margin:0px;
+    height: auto;
+}
+
+
+}
