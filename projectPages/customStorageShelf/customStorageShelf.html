@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--meta data-->
+        <title>Custom Storage Shelf</title>
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/png" href="../../icons/favicon.png">
+
+        <!--style sheets-->
+        <link rel="stylesheet" href="../../general.css">
+        <link rel="stylesheet" href="../assets/template.css">
+
+        <!--google fonts-->
+        <!--Navbar-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+        <!--h1-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+        <!--p-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+        <!--Making Reactive CSS Work-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    </head>
+    
+    <body onresize="windowSizeUpdate();">
+        <!--navbar-->
+        <ul class="navbar">
+            <li> <a class="inactive" href="../../index.html">HOME</a> </li>
+            <li> <a class = "inactive" href="../../projects.html">PROJECTS</a> </li>
+            <li id="contact"> <a class = "inactive" href="../../contactMe.html">CONTACT ME</a> </li>
+        </ul>
+
+
+        <!--Slideshow and its buttons-->
+        <div class="slideshowContainer contentBox">
+            <h1>Custom Storage Shelf</h1>
+            <div class="slideshow">
+                <button class="slideshowButton left isHidden">
+                    <img src="../assets/leftArrow.png" alt="Left Arrow Button">
+                </button>
+
+                <div class="slideshowTrackContainer">
+                    <ul class="slideshowTrack animate">
+                        <li class="slideshowSlide currentSlide">
+                            <img class="slideshowImage" src="customDrawerCad.PNG" alt="CAD Model for Drawer Prototype">
+                        </li>
+                        <li class="slideshowSlide">
+                            <img class="slideshowImage" src="drawerPrototypeClosed.JPG" alt="Printed Drawer Prototype Closed">
+                        </li>
+                        <li class="slideshowSlide">
+                            <img class="slideshowImage" src="drawerPrototypeOpen.JPG" alt="Printed Drawer Prototype Open"> 
+                        </li>
+                    </ul>
+                </div>
+
+                <button class="slideshowButton right">
+                    <img src="../assets/rightArrow.png" alt="Right Arrow Button">
+                </button>
+
+                <div class="slideshowNav">
+                    <button class="slideshowIndicator currentSlide"></button>
+                    <button class="slideshowIndicator"></button>
+                    <button class="slideshowIndicator"></button>
+                </div>
+
+            </div>
+        </div>
+
+        <!--Short Overview of the Project-->
+
+        <div class="contentBox bottomTwo aboutProject" id="overview">
+            <h2>Overview</h2>
+            <p>For this project, I tried to make a customizable 3D-printed storage shelf that could hold all of my electronic components.
+                However, after some test prints, I realized that the disadvantage of a long print time far outweighed the shelf's benefits.</p>
+        </div>
+
+        <!--links for github/files-->
+        <div class="contentBox bottomTwo" id="linkBox">
+            <h2>Links/Files</h2>
+            
+            <div class="contentSubBox link">
+                <a href="https://cad.onshape.com/documents/c8271b3b3d3e735ec4e66825/w/25d095d643487d69cc3a7a26/e/7e386a32922a8d57adc25016?renderMode=0&uiState=66a1655bc0c9417c15a90967" target="_blank">Onshape CAD Files</a>
+            </div>
+
+        </div>
+
+        
+        <!--Text about the project-->
+        
+        <div class="contentBox bottomTwo aboutProject">
+            <h2>About This Project</h2>
+            
+            <p>
+                Over the next few years, I will be collecting a lot of electrical components and other items to use in projects, and I need
+                 a place to organize them. Because these items will vary in size and quantity, I would like a way to customize my storage 
+                 with multiple sizes of drawers for different components. To do this, I tried to design a tileable shelf and drawers that I 
+                 could 3D-print and customize.
+            </p>
+
+            <br>
+
+            <p>
+                To start, I worked on designing a prototype for a single drawer. I did this because I wanted the final shelf to be composed of 
+                multiple small drawers I could combine if I needed a larger one. First, I needed to determine the drawer size, which ended up being 
+                about 3" x 1.5" x 1.5". After this, I made the CAD models for the drawer in Onshape and printed them. The shelf component of the prototype was 
+                good, but the drawer had a little too much room between itself and the shelf, so I designed a second drawer with its walls wider and moved the notches 
+                for the guide rails from the bottom of the drawer to the top. This second drawer was perfect, so I began working on making the larger shelf.
+            </p>
+
+            <br>
+
+            <p>
+                First, I combined four of the small shelves to make the large shelf. Out of curiosity, I exported the file into my 3D printer's slicing program to see 
+                what the print time could look like. It turned out that if I printed on my current settings, it would take 16 hours to complete, and even when I turned up the 
+                speed, it would still take about 12. On top of that, I planned on adding a fastening mechanism so that different shelves could be held together, which would add 
+                even more time to the print. Because of this, it would take two days to print both the shelf and the four drawers that go with it. I knew going into this that print 
+                time would be an issue, but I didn't think it would be this bad. Thus, the benefits of customizing my storage were far outweighed by the print time, so I decided to 
+                buy a storage shelf. This was disappointing, but I still had fun working on this project, and maybe if I ever get a faster printer, I could try it again.
+            </p>
+
+        </div>
+
+        
+    </body>
+
+    <script src="../assets/template.js"></script>
+
+    </html>
