@@ -124,6 +124,23 @@
     }
 }
 
+@media screen and (max-width: 600px){
+    .academicProjectsContentBoxLink img{
+        width:100%;
+        margin:0;
+        height: 325px;
+        object-fit: cover;
+    }
+
+    .academicProjectsContentBoxLink h2{
+        text-align: center;
+    }
+
+    .academicProjectsContentBoxLink p{
+        text-align: center;
+    }
+}
+
 /*Animations for Each Section*/
 
 #large{
